@@ -1,0 +1,37 @@
+labels:
+  0: "unlabeled"
+  4: "1 person"
+  5: "2+ person"
+  6: "rider"
+  7: "car"
+  8: "trunk"
+  9: "plants"
+  10: "traffic sign 1" # standing sign
+  11: "traffic sign 2" # hanging sign
+  12: "traffic sign 3" # high/big hanging sign
+  13: "pole"
+  14: "garbage-can"
+  15: "building"
+  16: "cone/stone"
+  17: "fence"
+  21: "bike"
+  22: "ground"
+
+learning_map:
+  0: -1
+  4: 4 # "1 person"
+  5: 4 #"2+ person"
+  6: 6 #"rider"
+  7: 0 #"car"
+  8: 12 # "trunk"
+  9: 12 #"plants"
+  10: 13 #"traffic sign 1" # standing sign
+  11: 13 #"traffic sign 2" # hanging sign
+  12: 13 #"traffic sign 3" # high/big hanging sign
+  13: 14 # "pole"
+  14: -1 #"garbage-can"
+  15: 10 # "building"
+  16: -1 #"cone/stone"
+  17: 11 #"fence"
+  21: 2 #"bike"
+  22: -1 #"ground"
