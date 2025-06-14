@@ -952,7 +952,7 @@ def train_function(teacher_model, student_model, training_dataloader, epochs=5):
             accumulated_teacher_losses.append(teacher_loss.detach().requires_grad_())
 
             # Update teacher model every 25 iterations
-            if (train_idx + 1) % 1 == 0:
+            if (train_idx + 1) % 100 == 0:
                 avg_teacher_loss = update_teacher_params(
                     teacher_optim, accumulated_teacher_losses
                 )
@@ -967,7 +967,7 @@ def train_function(teacher_model, student_model, training_dataloader, epochs=5):
                 flush=True,
             )
 
-            if (train_idx + 1) % 5 == 0:
+            if (train_idx + 1) % 500 == 0:
                 ema_update(teacher_model, student_model, alpha=0.995)
                 os.makedirs(
                     "/data4/vaibhav/musmix/output/model_checkpoints/adaptation",
